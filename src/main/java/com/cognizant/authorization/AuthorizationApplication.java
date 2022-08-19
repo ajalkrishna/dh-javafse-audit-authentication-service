@@ -6,10 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.cognizant.authorization.repository.AuthorizedUserRepository;
 
-//import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 @SpringBootApplication
-//@EnableSwagger2
 @EnableJpaRepositories
 public class AuthorizationApplication {
 
