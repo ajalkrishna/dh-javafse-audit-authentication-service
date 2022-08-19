@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-west-2:860061945305:task-definition/audit-authentication-task:1"
+        LoadBalancerInfo:
+          ContainerName: "dh-javafse-audit-authentication-service"
+          ContainerPort: "9000"
+        PlatformVersion: "LATEST"
